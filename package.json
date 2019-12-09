@@ -1,0 +1,19 @@
+{
+  "author": "Markus Klein",
+  "name": "hash-calculator",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "rimraf dist pkg && node-sass scss --output dist && webpack",
+    "start": "rimraf dist pkg && node-sass scss --output dist && webpack-dev-server --open -d",
+    "test": "cargo test && wasm-pack test --headless"
+  },
+  "devDependencies": {
+    "@wasm-tool/wasm-pack-plugin": "^0.4.2",
+    "copy-webpack-plugin": "^5.0.3",
+    "node-sass": "^4.13.0",
+    "rimraf": "^2.6.3",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.3",
+    "webpack-dev-server": "^3.7.1"
+  }
+}

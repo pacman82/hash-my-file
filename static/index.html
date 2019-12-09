@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hash calculator</title>
+    <meta name="description" content="Calculate hash sums like md5 or sha256 locally in your browser." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Hash Calculator</h1>
+    <h2>Select File</h2>
+    <div id="container">
+      <div class="drop-zone">
+        <div class="file-upload-output-container">
+          <div class="file-upload-container">
+            <label for="file-upload"><span class="open-in-browser-icon">Browse</span></label>
+            <input id="file-upload" type="file" />
+          </div>
+          <div class="unsupported-filetype-info warning hide">Unsupported Filetype</div>
+          <div class="unsupported-browser-info warning hide">
+            Oh uh, your browser does not seem to support what we do.
+          </div>
+        </div>
+        <p class="drop-zone-text">Drop file here</p>
+      </div>
+    </div>
+    <fieldset>
+        <legend>Hash algorithm</legend>
+        <label><input type="radio" name="algorithm" value="sha256" checked> sha256</label>
+        <label><input type="radio" name="algorithm" value="md5"> md5</label>
+    </fieldset>
+    <h2>Output</h2>
+    <p>HashSum: </p>
+    <div id="output">
+      
+    </div>  
+    <script src="index.js"></script>
+  </body>
+</html>
