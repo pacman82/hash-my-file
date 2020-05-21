@@ -1,3 +1,7 @@
+# Hash my file
+
+Calculate hash sums in the browser using WASM.
+
 ## How to install
 
 ```sh
